@@ -438,7 +438,7 @@ extension VideoClipViewController {
             case .succeeded:
                 guard
                     let cgImage = cgimage,
-                    let index = this.thumbnails.index(where: { $0.time == requestedTime.seconds }) else {
+                    let index = this.thumbnails.firstIndex(where: { $0.time == requestedTime.seconds }) else {
                         return
                 }
                 let image = UIImage(cgImage: cgImage).scaled(toHeight: CGFloat(height))
@@ -451,6 +451,8 @@ extension VideoClipViewController {
             case .cancelled:
                 break
             case .failed:
+                break
+            @unknown default:
                 break
             }
         }
@@ -564,6 +566,8 @@ extension VideoClipViewController {
                     print("---导出中---")
                 case .unknown:
                     print("---未知状态---")
+                @unknown default:
+                    break
                 }
             }
         })

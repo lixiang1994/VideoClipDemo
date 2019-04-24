@@ -167,7 +167,7 @@
 				C99FDA222170388D009E622D /* Sources */,
 				C99FDA232170388D009E622D /* Frameworks */,
 				C99FDA242170388D009E622D /* Resources */,
-				D7FC6FCC5C3D2A9BE8C299CD /* [CP] Embed Pods Frameworks */,
+				A4F0B2AFBC8BE77EFFC0CB26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,7 +247,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D7FC6FCC5C3D2A9BE8C299CD /* [CP] Embed Pods Frameworks */ = {
+		A4F0B2AFBC8BE77EFFC0CB26 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,7 +255,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-VideoClipDemo/Pods-VideoClipDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-VideoClipDemo/Pods-VideoClipDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -266,7 +266,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoClipDemo/Pods-VideoClipDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoClipDemo/Pods-VideoClipDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -437,7 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GNXU2LRUU;
+				DEVELOPMENT_TEAM = 683UGRW72Z;
 				INFOPLIST_FILE = VideoClipDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -446,7 +446,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lee.VideoClipDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -457,7 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3GNXU2LRUU;
+				DEVELOPMENT_TEAM = 683UGRW72Z;
 				INFOPLIST_FILE = VideoClipDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,7 +466,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lee.VideoClipDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
